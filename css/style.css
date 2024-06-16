@@ -1,0 +1,355 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu";
+}
+
+.body {
+  background-image: url("../images/home.gif");
+  background-position: center;
+  /* Center the image */
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
+  background-size: 100% 100%;
+  background-attachment: fixed;
+
+  /* Resize the background image to cover the entire container */
+  display: flex;
+  height: auto;
+  /* align-items: center; */
+  justify-content: center;
+
+}
+
+.indexDiv {
+  size: 70%;
+  /*background-color: rgb(0,0,0); */
+  /* Fallback color */
+  background: rgba(255, 255, 255, .1);
+  /* Black w/opacity/see-through */
+  backdrop-filter: blur(1px);
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+  border-radius: 1rem;
+  /*filter:blur(8px);*/
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+    0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.indexDiv input {
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Black w/opacity/see-through */
+  width: 50%;
+  height: 2.2rem;
+  justify-content: center;
+  font-size: 1rem;
+  color: white;
+  padding: 0.2rem 0.5rem;
+  border-radius: 1.5rem;
+  border: 1px solid #c0c0c0;
+  box-shadow: 0 0 1rem #0ef;
+}
+
+.indexDiv input:hover {
+  color: #f3f3f3;
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 1px solid #0080ff;
+}
+
+.indexDiv input:focus {
+  border: 2px solid #0080ff;
+}
+
+.indexDiv a {
+  text-decoration: none;
+}
+
+.indexDiv button {
+  color: white;
+  width: 20%;
+  height: 2rem;
+  border-radius: 1rem;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 1px solid #c0c0c0;
+  box-shadow: 0 0 1rem #0ef;
+
+}
+
+.indexDiv button:hover {
+  color: #f3f3f3;
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 2px solid #0080ff;
+
+}
+
+.indexDiv button,
+a:focus {
+  border: 1px solid #0080ff;
+}
+
+
+.indexDiv a {
+  align-content: center;
+  color: #f3f3f3;
+  padding: .5rem;
+}
+
+::placeholder {
+  color: rgb(243, 218, 218);
+}
+
+.global {
+  display: ruby;
+  text-align: center;
+  width: 90%;
+}
+
+.mainContainer {
+  margin-top: 8px;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  max-width: 30rem;
+  height: auto;
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, .1);
+  /* Black w/opacity/see-through */
+  backdrop-filter: blur(1px);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+    0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.mainContainer a {
+  text-decoration: none;
+
+
+}
+
+.searchInput {
+  width: 100%;
+  display: flex;
+  padding: 1rem 1rem;
+  justify-content: center;
+}
+
+.searchInput input {
+  width: 100%;
+  height: 2rem;
+  outline: none;
+  font-size: 1rem;
+  color: #c0c0c0;
+  padding: 0.2rem 0.5rem;
+  border-radius: 1.5rem;
+  border: 1px solid #c0c0c0;
+  box-shadow: 0 0 1rem #0ef;
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease;
+}
+
+.searchInput input:focus {
+  color: #f3f3f3;
+  border: 1px solid #0080ff;
+  background-color: rgba(0, 0, 0, 0.7);
+  transition-delay: 2s;
+
+}
+
+.searchInput input:hover {
+  color: #f3f3f3;
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 2px solid #0080ff;
+}
+
+.searchInput button {
+  background-image: url("../images/search.png");
+  background-position: center;
+  background-size: contain;
+  width: 2.2rem;
+  height: 2rem;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  margin-left: 0.4rem;
+  transition: all 0.3s ease;
+  background-color: rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 1rem #0ef;
+  border: 1px solid #c0c0c0;
+
+}
+
+.searchInput button:hover {
+  color: #f3f3f3;
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 2px solid #0080ff;
+}
+
+
+.weatherIcon {
+  display: flex;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  justify-content: center;
+}
+
+.weatherIcon img {
+  max-width: 90%;
+  width: 10rem;
+}
+
+.weatherDetails .temp {
+  font-size: 2rem;
+}
+
+.cityDetails {
+  color: #323232;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.cityDetails .date {
+  color: #323232;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.windDetails {
+  display: flex;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  justify-content: space-around;
+}
+
+.windDetails .humidityBox {
+  display: flex;
+  font-size: 1rem;
+  color: #323232;
+}
+
+.windDetails .humidity .humidityValue {
+  text-align: center;
+  font-size: 2rem;
+  color: #323232;
+}
+
+.windDetails .humidityBox img {
+  max-height: 3rem;
+  margin-right: 0.5rem;
+}
+
+.windDetails .windSpeed {
+  display: flex;
+  font-size: 1rem;
+  color: #323232;
+}
+
+.windDetails .windSpeed img {
+  max-height: 3rem;
+  margin-right: 0.5rem;
+}
+
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: end;
+  padding: .5rem;
+  background: none;
+
+}
+
+.home a {
+  outline: none;
+  font-size: 1rem;
+  color: #c0c0c0;
+  padding: 0.2rem 0.5rem;
+  border-radius: 1.5rem;
+  border: 1px solid #c0c0c0;
+  box-shadow: 0 0 1rem #0ef;
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease;
+}
+
+.home a:hover,
+:focus {
+  color: #f3f3f3;
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 2px solid #0080ff;
+
+}
+
+
+image-logo {
+  height: auto;
+  width: auto;
+  filter: drop-shadow(20px 10px 10px black);
+}
+
+/* 8 day forcast */
+.forecast {
+  border-radius: 1rem;
+  width:80%;
+  max-width: 30rem;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, .1);
+  /* Black w/opacity/see-through */
+  backdrop-filter: blur(1px);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+    0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.day {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.day span {
+  justify-content: center;
+
+}
+
+.day .date {
+  font-weight: bold;
+}
+
+.day img {
+  position: relative;
+  top: -20px;
+  width: 4rem;
+  height: 4rem;
+
+}
+
+.day .temperature {
+  font-weight: bold;
+}
+
+.day .condition {
+  font-weight: bold;
+}
+
+
+
+@media (max-width:600px){
+  .global{
+    width: 100%;
+  }
+  .weatherDetails{
+    width: 90%;
+  }
+  .forecast{
+    width: 90%;
+  }
+}

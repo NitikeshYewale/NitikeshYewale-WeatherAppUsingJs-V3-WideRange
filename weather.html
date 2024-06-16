@@ -1,0 +1,112 @@
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App - NitikeshYewale</title>
+  <link rel="icon" href="images/icon.gif" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="body">
+  <div class="global">
+    <div class="mainContainer">
+      <div class="searchInput">
+        <input type="text" placeholder="Enter City Name" id="searchInput" name="city" />
+        <button type="submit" class="searchButton"></button>
+      </div>
+      <div class="weatherDetails">
+        <div class="weatherIcon">
+          <img src="images/cloudy.png" alt="Clouds" id="weather-icon" class="weather-icon">
+          <h2>clouds 20°C</h2>
+        </div>
+
+        <div class="cityDetails">
+          <div class="desc">
+            <strong>city</strong>
+          </div>
+          <div class="date">date</div>
+          <div class="date">Your Date: <span class="systemDate">systemDate</span></div>
+          <div class="description">Description</div>
+        </div>
+        <div class="windDetails">
+          <div class="humidityBox">
+            <img src="images/thermometer.png" alt="Humidity">
+            <div class="humidity">
+              <span>Humidity </span>
+              <h2 class="hu">20%</h2>
+            </div>
+          </div>
+
+          <div class="windSpeed">
+            <img src="images/wind.png">
+            <div class="wind">
+              <span>Wind Speed</span>
+              <h2> 20km/h</h2>
+            </div>
+          </div>
+        </div>
+        <div class="home">
+          <a href="index.html">HomePage</a>
+        </div>
+      </div>
+    </div>
+    <div class="forecast">
+      <h1 style="margin-bottom: 1rem;">7 Days Forecast </h1>
+      <div id="day1" class="day">
+        <span id="date1" class="date">Monday, June 7</span>
+        <img id="img1" src="https://openweathermap.org/img/wn/10d@2x.png">
+        <span id="temp1" class="temperature">25°C / 17°C</span>
+        <span id="desc1" class="condition">Heavy intensity rain</span>
+      </div>
+      <div id="day2" class="day">
+        <span id="date2" class="date">Monday, June 7</span>
+        <img id="img2" src="https://openweathermap.org/img/wn/10d@2x.png">
+        <span id="temp2" class="temperature">25°C / 17°C</span>
+        <span id="desc2" class="condition">Heavy intensity rain</span>
+      </div>
+      <div id="day3" class="day">
+        <span id="date3" class="date">Monday, June 7</span>
+        <img id="img3" src="https://openweathermap.org/img/wn/10d@2x.png">
+        <span id="temp3" class="temperature">25°C / 17°C</span>
+        <span id="desc3" class="condition">Heavy intensity rain</span>
+      </div>
+      <div id="day4" class="day">
+        <span id="date4" class="date">Monday, June 7</span>
+        <img id="img4" src="https://openweathermap.org/img/wn/10d@2x.png">
+        <span id="temp4" class="temperature">25°C / 17°C</span>
+        <span id="desc4" class="condition">Heavy intensity rain</span>
+      </div>
+      <div id="day5" class="day">
+        <span id="date5" class="date">Monday, June 7</span>
+        <img id="img5" src="https://openweathermap.org/img/wn/10d@2x.png">
+        <span id="temp5" class="temperature">25°C / 17°C</span>
+        <span id="desc5" class="condition">Heavy intensity rain</span>
+      </div>
+      <div id="day6" class="day">
+        <span id="date6" class="date">Monday, June 7</span>
+        <img id="img6" src="https://openweathermap.org/img/wn/10d@2x.png">
+        <span id="temp6" class="temperature">25°C / 17°C</span>
+        <span id="desc6" class="condition">Heavy intensity rain</span>
+      </div>
+      <div id="day7" class="day">
+        <span id="date7" class="date">Monday, June 7</span>
+        <img id="img7" src="https://openweathermap.org/img/wn/10d@2x.png">
+        <span id="temp7" class="temperature">25°C / 17°C</span>
+        <span id="desc7" class="condition">Heavy intensity rain</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+  <script>
+    const input = document.getElementById("searchInput");
+    const city = localStorage.getItem("cityName"); localStorage.removeItem("cityName");
+    checkWeather(city);
+  </script>
+
+
+
+
+</body>
+
+</html>

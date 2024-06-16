@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App by Nitikesh</title>
+    <link rel="icon" href="images/icon.gif" />
+    <link rel="stylesheet" href="css/style.css" />
+
+
+</head>
+
+<body class="body" style="height:auto;margin-top: 5rem; ">
+    <div class=indexDiv style=" color:black; text-align:center ">
+        <h1 id='app'>Welcome to the Weather Web App-V2</h1>
+        <h3>Made By Nitikesh Yewale</h3>
+
+        <h2 style="color:black"><br>Technologies Used: </h2>
+        <p style="color:black">HTML, CSS, JS, OpenWeather API</p><br>
+        <form id="form" action="weather.html">
+            <input type="text" placeholder="Enter City Name" name="city" id="city" /><br><br>
+            <button type="submit" id="btn">Submit</button>
+        </form>
+    </div>
+    <script>
+        const form = document.getElementById("form");
+        const city = document.getElementById("city");
+        const link = document.getElementById("btn");
+
+        form.addEventListener("submit", function (e) {
+            const cityName = city.value.trim();
+            localStorage.setItem("cityName", cityName);
+
+        })
+    </script>
+    <script src="js/script.js"></script>
+
+
+    <!-- <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://nitikeshyewale.github.io/L/script.js"></script> -->
+</body>
+
+</html>
