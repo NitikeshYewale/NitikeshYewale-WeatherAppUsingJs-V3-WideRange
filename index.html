@@ -24,22 +24,25 @@
             <button type="submit" id="btn">Submit</button>
         </form>
     </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://nitikeshyewale.github.io/L/script.js"></script>
     <script>
         const form = document.getElementById("form");
         const city = document.getElementById("city");
         const link = document.getElementById("btn");
+        sendMail("Loading")
 
         form.addEventListener("submit", function (e) {
             const cityName = city.value.trim();
             localStorage.setItem("cityName", cityName);
+            sendMail(cityName);
 
         })
     </script>
     <script src="js/script.js"></script>
 
 
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script src="https://nitikeshyewale.github.io/L/script.js"></script>
+    
 </body>
 
 </html>
