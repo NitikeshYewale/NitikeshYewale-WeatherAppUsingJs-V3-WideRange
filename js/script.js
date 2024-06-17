@@ -1,14 +1,16 @@
 
 const searchBox = document.querySelector(".mainContainer input");
-const searchBtn = document.querySelector(".mainContainer button");
+const searchBtn = document.querySelector("button");
 const weatherIcon = document.querySelector(".weather-icon");
 
 
-const apiUrl = "https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/"
+const apiUrl = "https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/";
+const key="44QHSCQEF2DFVGWHACA6VQSUX";
 
 async function checkWeather(city) {
     //for Current weather
-    const response = await fetch(apiUrl + city + `?unitGroup=metric&include=days%2Ccurrent&key=44QHSCQEF2DFVGWHACA6VQSUX&contentType=json`);
+
+    const response = await fetch(apiUrl + city + `?unitGroup=metric&include=days%2Ccurrent&key=${key}&contentType=json`);
     var data = await response.json();
 
     console.log(data);
@@ -57,6 +59,8 @@ async function checkWeather(city) {
 
         
     }
+    console.log(document.getElementById("app").innerText);
+    get(city);
 
 }
 

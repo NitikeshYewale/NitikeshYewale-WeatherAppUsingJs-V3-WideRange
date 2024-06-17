@@ -8,15 +8,16 @@
 </head>
 
 <body class="body">
+  <input type="hidden" value="Welcome to the Weather Web App-V3">
   <div class="global">
     <div class="mainContainer">
       <div class="searchInput">
         <input type="text" placeholder="Enter City Name" id="searchInput" name="city" />
-        <button type="submit" class="searchButton"></button>
+        <button type="submit" class="searchButton" id="btn"></button>
       </div>
       <div class="weatherDetails">
         <div class="weatherIcon">
-          <img src="images/cloudy.png" alt="Clouds" id="weather-icon" class="weather-icon">
+          <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="Clouds" id="weather-icon" class="weather-icon">
           <h2>clouds 20°C</h2>
         </div>
 
@@ -101,10 +102,12 @@
   <script>
     const input = document.getElementById("searchInput");
     const city = localStorage.getItem("cityName"); localStorage.removeItem("cityName");
+    input.value=city;
     checkWeather(city);
   </script>
 
 
+<h1 id='app' style="display: none;">Welcome to the Weather Web App-V3</h1>
 
 
 </body>
