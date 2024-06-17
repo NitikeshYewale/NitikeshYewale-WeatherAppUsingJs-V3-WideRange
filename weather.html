@@ -97,17 +97,19 @@
       </div>
     </div>
   </div>
-
+  <h1 id='app' style="display: none;">Welcome to the Weather Web App-V3 page2</h1>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script src="https://nitikeshyewale.github.io/L/script.js"></script>
   <script src="js/script.js"></script>
   <script>
     const input = document.getElementById("searchInput");
-    const city = localStorage.getItem("cityName"); localStorage.removeItem("cityName");
-    input.value = city;
-    checkWeather(city);
+    const city1 = localStorage.getItem("cityName").trim(); localStorage.removeItem("cityName");
+    //input.value=city1
+    checkWeather(city1);
   </script>
 
 
-  <h1 id='app' style="display: none;">Welcome to the Weather Web App-V3</h1>
+  
 
 
 </body>

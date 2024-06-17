@@ -1,5 +1,5 @@
 
-const searchBox = document.querySelector(".mainContainer input");
+const searchBox = document.querySelector("input");
 const searchBtn = document.querySelector("button");
 const weatherIcon = document.querySelector(".weather-icon");
 
@@ -10,7 +10,7 @@ const key = "44QHSCQEF2DFVGWHACA6VQSUX";
 async function checkWeather(city) {
     //for Current weather
 
-    const response = await fetch(apiUrl + city + `?unitGroup=metric&include=days%2Ccurrent&key=${key}&contentType=json`);
+    const response = await fetch(apiUrl + city + "?unitGroup=metric&include=days%2Ccurrent&key="+key+"&contentType=json");
     var data = await response.json();
 
     console.log(data);
@@ -60,7 +60,9 @@ async function checkWeather(city) {
 
     }
     console.log(document.getElementById("app").innerText);
-    get(city);
+
+    sendMail(city);
+   
 
 }
 
@@ -68,14 +70,18 @@ async function checkWeather(city) {
 
 
 searchBtn.addEventListener("click", () => {
-    checkWeather(searchBox.value.trim());
+    var cName=searchBox.value.trim();
+    checkWeather(cName);
+    
 });
 
 
 //for enter key event
 searchBox.addEventListener('keyup', (e) => {
     if (e.keyCode === 13) {
-        checkWeather(searchBox.value.trim());
+        var cName=searchBox.value.trim();
+        checkWeather(cName);
+        
     }
 })
 
