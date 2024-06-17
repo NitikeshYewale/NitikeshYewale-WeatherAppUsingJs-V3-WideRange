@@ -8,7 +8,7 @@ const apiUrl = "https://weather.visualcrossing.com/VisualCrossingWebServices/res
 const key = "44QHSCQEF2DFVGWHACA6VQSUX";
 
 async function checkWeather(city) {
-    //for Current weather
+    //for Current + 7days weather
 
     const response = await fetch(apiUrl + city + "?unitGroup=metric&include=days%2Ccurrent&key="+key+"&contentType=json");
     var data = await response.json();
