@@ -1,4 +1,4 @@
-# ☁️Weather Application version 2.0 using HTML, CSS, JS with 7 Days forecast🌡️[link](https://nitikeshyewale.github.io/NitikeshYewale-WeatherAppUsingJs-V3-WideRange/)
+# ☁️Weather Application version 3.0 using HTML, CSS, JS with 7 Days forecast🌡️[link](https://nitikeshyewale.github.io/NitikeshYewale-WeatherAppUsingJs-V3-WideRange/)
 
 
 ### 🎯Developed a user-friendly weather appplication utilizing the simplicity of HTML, CSS and Java Script with enhanced accessiblity and ease of use.
